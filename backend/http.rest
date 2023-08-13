@@ -1,0 +1,43 @@
+GET https://pokeapi.co/api/v2/type/1
+
+###
+GET http://localhost:3000/mentor/3
+
+###
+GET http://localhost:4000/user
+
+Content-Type: application/json
+
+{"username": "leeon","password": "leon"}
+
+###
+POST http://localhost:4000/user/register
+Content-Type: application/json
+
+{"username": "anders","password": "anders"}
+
+
+
+###
+GET http://localhost:4000/user
+Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYW5kZXJzIiwiaWQiOjEwLCJpYXQiOjE2ODA5NDY5OTEsImV4cCI6MTY4MDk0NzAyMX0.aCOhj3yjAzP9EhqvG2ErqKmcRgyGng4iolLL-IM95OY
+`
+###
+GET https://api.github.com/user/repos
+Content-Type: application/json
+
+Authorization: `token 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`
+
+
+###
+POST http://localhost:4000/user/login
+Content-Type: application/json
+
+{"username": "anders","password": "anders"}
+
+###
+GET http://localhost:4000/auth/receive_github_code_token
+Content-Type: application/json
+
+{"code": "b517c897c5c02897e27d","password": "anders"}
+
